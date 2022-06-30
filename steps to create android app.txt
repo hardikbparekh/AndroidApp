@@ -8,6 +8,11 @@ gradle.properties > android.useAndroidX=true
 Copy
 local.properties
 
+in file gradle.properties
+change
+android.useAndroidX=false
+to
+android.useAndroidX=true
 
 <!DOCTYPE html>
 <html>

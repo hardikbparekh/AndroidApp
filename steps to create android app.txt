@@ -32,7 +32,7 @@ in file assets > www > index.html
         document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
         FirebasePlugin.getToken(function(token){
-            window.location.href = "http://crm.virtualaccounts.in/?firebasetoken=" + token;
+            window.location.href = "http://siteurl/?firebasetoken=" + token;
         }, function(error) {
             alert("Failed to get FCM token", error);
         });
@@ -45,7 +45,7 @@ in file assets > www > index.html
 </body>
 </html>
 
-in AndroidManifest.xml
+in AndroidManifest.xml (File in github for refrence)
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -76,7 +76,7 @@ in AndroidManifest.xml
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
 
-in config.xml
+in config.xml (File in github for refrence)
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="*" />

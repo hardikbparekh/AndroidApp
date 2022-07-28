@@ -10,6 +10,8 @@ cordova plugin add cordova-plugin-firebase --save
 
 Copy
 local.properties
+change the sdk.dir=*C\:\\Users\\phard\\AppData\\Local\\Android\\Sdk* in the file as per your pc setting
+
 
 open project in android studio
 

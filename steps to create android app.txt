@@ -7,13 +7,13 @@ cd C:\Users\phard\AndroidStudioProjects
 cordova create hello com.example.hello HelloWorld
 cd hello
 cordova platform add android
-cordova platform add android@8.0.0
-cordova plugin add cordova-plugin-firebase --save
+cordova plugin add cordova-plugin-firebasex
 
 Copy
-local.properties to C:\Users\phard\AndroidStudioProjects\kaizen\platforms\android
+local.properties to C:\Users\phard\AndroidStudioProjects\hello\platforms\android
 change the sdk.dir=*C\:\\Users\\phard\\AppData\\Local\\Android\\Sdk* in the file as per your pc setting
 
+docnload and copy file google-services.json to C:\Users\phard\AndroidStudioProjects\hello\platforms\android\app
 
 open project in android studio
 
@@ -24,9 +24,6 @@ to
 android.useAndroidX=true
 
 after this change sync you project 
-
-Remove lines and functions which are giving error in android studio
-
 
 
 in file assets > www > index.html

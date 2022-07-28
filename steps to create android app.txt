@@ -2,14 +2,16 @@ To install cordova
 Open command prompt
 npm install -g cordova
 
+Open command prompt
 cd C:\Users\phard\AndroidStudioProjects
 cordova create hello com.example.hello HelloWorld
 cd hello
 cordova platform add android
+cordova platform add android@8.0.0
 cordova plugin add cordova-plugin-firebase --save
 
 Copy
-local.properties
+local.properties to C:\Users\phard\AndroidStudioProjects\kaizen\platforms\android
 change the sdk.dir=*C\:\\Users\\phard\\AppData\\Local\\Android\\Sdk* in the file as per your pc setting
 
 

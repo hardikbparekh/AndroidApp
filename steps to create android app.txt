@@ -11,11 +11,19 @@ cordova plugin add cordova-plugin-firebase --save
 Copy
 local.properties
 
+open project in android studio
+
 in file gradle.properties
 change
 android.useAndroidX=false
 to
 android.useAndroidX=true
+
+after this change sync you project 
+
+Remove lines and functions which are giving error in android studio
+
+
 
 in file assets > www > index.html
 <!DOCTYPE html>
@@ -94,3 +102,11 @@ in config.xml (File in github for refrence)
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+
+Update icons in 
+C:\Users\phard\AndroidStudioProjects\tahaangroup\platforms\android\app\src\main\res
+Find all (ic_launcher.png and ic_launcher_foreground.png) and replace with your icon with same name
+
+Steps to create apk
+https://developer.android.com/studio/publish/app-signing
+

@@ -76,8 +76,6 @@ in AndroidManifest.xml (File in github for refrence)
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <receiver android:name="org.apache.cordova.firebase.OnNotificationOpenReceiver" />
-        <meta-data android:name="com.google.firebase.messaging.default_notification_color" />
         <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id" />
         <meta-data android:name="firebase_analytics_collection_enabled" android:value="true" />
         <meta-data android:name="firebase_performance_collection_enabled" android:value="true" />
